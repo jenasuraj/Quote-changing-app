@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+   }
+   html
+   {
+    background-color: gray;
+   }
+   
+   #first
+   {
+    background-color: black;
+    color: white;
+    margin-top: -1100px;
+    padding: 20px;
+   height: 80px;
+border-radius: 8px;  
+ 
+}
+#second
+{
+    position: absolute;
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin-top: -600px;
+
+    background-color: black;
+    border-radius: 8px;
+}
+#anime
+{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+#third
+{
+    position: absolute;
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin-top: -600px;
+margin-left: -850px;
+    background-color: black;
+    border-radius: 8px;
+}
+#fourth
+{
+
+    position: absolute;
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin-top: -600px;
+margin-left: 850px;
+    background-color: black;
+    border-radius: 8px;
+
+}
+
+#study
+{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 80px;
+    margin-left: 100px;   
+}
+#love
+{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    margin-left: 155px;
+    margin-top: 80px;
+    margin-left: 100px;   
+}

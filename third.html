@@ -1,0 +1,122 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+]
+    <title>Document</title>
+    <style>
+        html{
+            background-color: grey;
+        }
+            
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+
+   }
+   #firstbox
+   {
+    color: aliceblue;
+    background-color: black;
+    border-radius: 6px;
+    
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -20px;
+   }
+   #container
+   { position: absolute;
+    height: 300px;
+    width: 400px;
+    border: 2px solid;
+    margin-top: 370px;
+    border-radius: 8px;
+   }
+   #click
+   {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 150px;
+    height: 40px;
+    width: 80px;
+    animation: style 2s 1;
+   }
+   #quotation
+   {
+    position: absolute;
+    height: 130px;
+    width: 380px;
+    border: 1px solid black;
+    margin-left: 8px;
+    margin-top: 60px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+   }
+   #scroll
+   {
+    position: absolute;
+    height: 200px;
+    width: 500px;
+    background-color: black;
+    color: aliceblue;
+    margin-top: -1000px;
+    border-color: aliceblue;
+   }
+   #sc
+   {
+    margin-left: 165px;
+   }
+
+    </style>
+</head>
+<body>
+    <div id="scroll">
+        <h1 id="sc">Scroll down</h1>
+    </div>
+    <div id="firstbox">
+
+    
+    <h1 id="first">
+        Quote generator
+    </h1>
+</div>
+    <div id="container">
+
+
+        <div id="quotation"></div>
+        <button id="click" onclick="doit()">Swap it!</button>
+    </div>
+
+    <script>
+
+
+let btn=document.getElementById('click');
+let quote=document.getElementById('quotation');
+const quotes=[{
+    quote:" One day, all your hard work will pay off!"
+},{
+    quote: "The earlier you start working on something, the earlier you will see results."
+}, {quote: " Life is short. Live it. Fear is natural. Face it. Memory is powerful. Use it"},
+{quote: "Do what is right, not what is easy."},{
+    quote: "We generate fears while we do nothing. We overcome these fears by taking action."
+},{ quote:"If we wait until we’re ready, we’ll be waiting for the rest of our lives"},
+{ quote: "It’s never too late to be what you might have been"},
+{ quote: "You don’t have to be great to start. But you have to start to be great"}
+   ];
+
+function doit()
+{
+  let random=Math.floor(Math.random()*quotes.length);
+  quote.innerText=quotes[random].quote;
+}
+    </script>
+</body>
+</html>
